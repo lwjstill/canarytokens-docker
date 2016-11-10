@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER Marco Slaviero <marco@thinkst.com>
 LABEL Description="This image is provides the frontend site for Canarytokens" Vendor="Thinkst Applied Research" Version="1.0"
-RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates wget python-pip unzip osslsigncode gcc python-dev libreadline-dev libncurses5-dev libffi-dev gcc patch make libxslt-dev libxml2-dev libz-dev fortune-mod && rm -rf /var/lib/apt/lists/* 
+RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates wget python-pip unzip osslsigncode gcc python-dev libreadline-dev libncurses5-dev libffi-dev gcc patch make libxslt-dev libxml2-dev libz-dev fortune-mod fortunes-bofh-excuses && rm -rf /var/lib/apt/lists/* 
 WORKDIR /
 RUN pip install -U setuptools
 RUN pip install --upgrade pip
